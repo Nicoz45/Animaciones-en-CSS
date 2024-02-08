@@ -1,0 +1,100 @@
+.pelota{
+    width: 100px;
+    height: 100px;
+    margin: 0px;
+    background: blueviolet;
+    filter: drop-shadow(2px 2px 5px);
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+    animation: recorrido 5s infinite;
+    -webkit-animation: recorrido 5s infinite;
+    -webkit-filter: drop-shadow(2px 2px 5px);
+    animation-timing-function: ease-in;
+}
+
+@keyframes recorrido{
+    0%{
+        transform: translate(0px, 0px);
+        -webkit-transform: translate(0px, 0px);
+        -moz-transform: translate(0px, 0px);
+        -ms-transform: translate(0px, 0px);
+        -o-transform: translate(0px, 0px);
+}
+    25%{
+        transform: translate(600px, 0px);
+        -webkit-transform: translate(600px, 0px);
+        -moz-transform: translate(600px, 0px);
+        -ms-transform: translate(600px, 0px);
+        -o-transform: translate(600px, 0px);
+}
+    50%{
+        transform: translate(600px, 600px);
+        -webkit-transform: translate(600px, 600px);
+        -moz-transform: translate(600px, 600px);
+        -ms-transform: translate(600px, 600px);
+        -o-transform: translate(600px, 600px);
+}
+    75%{
+        transform: translate(0px, 600px);
+        -webkit-transform: translate(0px, 600px);
+        -moz-transform: translate(0px, 600px);
+        -ms-transform: translate(0px, 600px);
+        -o-transform: translate(0px, 600px);
+}
+    100%{
+        transform: translate(0px, 0px);
+        -webkit-transform: translate(0px, 0px);
+        -moz-transform: translate(0px, 0px);
+        -ms-transform: translate(0px, 0px);
+        -o-transform: translate(0px, 0px);
+}
+}
+
+.pikachu{
+    width: 100px;
+    margin: auto;
+    margin-top: 200px;
+    animation: escala 1s infinite;
+    -webkit-animation: escala 1s infinite;
+}
+.pikachu img{
+    width: 100%;
+}
+@keyframes escala{
+    0%{
+        transform: scale(1);
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+}
+    50%{
+        transform: scale(1.5);
+        -webkit-transform: scale(1.5);
+        -moz-transform: scale(1.5);
+        -ms-transform: scale(1.5);
+        -o-transform: scale(1.5);
+}
+    100%{
+        transform: scale(1);
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+}
+}
+
+.java{
+    width: 50px;
+    height: 75px;
+    background-image: url(https://s.cdpn.io/79/sprite-steps.png);
+    animation: play .8s;
+    -webkit-animation: play .8s steps(10) infinite alternate;
+}
+@keyframes play{
+    from{background-position: 0px;}
+    to{background-position: -500px;}
+}
